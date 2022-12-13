@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "NTS Discord Presence",
+  "version": "0.0.0",
+
+  "description": "Update NTS listening status in Discord",
+  "author": "noicebois",
+  "content_scripts": [
+    {
+      "matches": ["https://*.nts.live/*"],
+      "js": ["build/content-script.js"]
+    }
+  ]
+}
